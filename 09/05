@@ -1,0 +1,13 @@
+#Question 2:
+
+def isPalindrome(word):
+    
+    for i in range(len(word)):
+         if word[i].lower() != word[len(word) - i - 1].lower():
+             print("Aqui perdemo")
+             return False
+       
+    print("The word is a palindrome")         
+    return True
+    
+isPalindrome("asa")
