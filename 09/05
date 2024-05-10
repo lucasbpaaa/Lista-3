@@ -11,3 +11,16 @@ def isPalindrome(word):
     return True
     
 isPalindrome("asa")
+
+#Question 3:
+
+def get_vogals(word):
+    word = word.lower()
+    amostral_space = ["a", "e", "i", "o", "u"]
+    vogals = []
+    for letter in amostral_space:
+        if letter in word:
+            vogals.append(letter)
+    return vogals
+
+print(get_vogals("Bianca"))
