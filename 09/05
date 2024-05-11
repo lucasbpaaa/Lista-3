@@ -39,3 +39,21 @@ def enconder(phrase):
         print(letter, end = '')
         
 enconder('Bianca Moreno is a big love')    
+
+#Question 5:
+
+def isAnagram(word):
+    word = word.lower()
+    lista = []
+    for letter in word:
+        lista.append(letter)
+    
+    for i in range(len(lista)):
+        if lista[i] != lista[len(word) - 1 -i]:
+            print("The word isn't anagram")
+            return False
+       
+    print("The word is a anagram")
+    return True
+
+isAnagram("BiancaacnaiB")
