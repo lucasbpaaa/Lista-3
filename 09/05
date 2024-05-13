@@ -56,4 +56,24 @@ def isAnagram(word):
     print("The word is a anagram")
     return True
 
+
+#Question 6:
+
+def isAnagrama(primeira, segunda):
+    if len(primeira) == len(segunda):
+      soma = 0
+      primeira = list(primeira)
+      segunda = list(segunda)
+      for i in range(len(primeira)):
+        if primeira[i] in segunda:
+          segunda.remove(primeira[i])
+          soma += 1
+      if soma == len(primeira) and len(segunda) == 0:
+        print(True)
+      else:
+        print(False)        
+    else:
+      print(False)
+isAnagrama('feijao','jaofei')  
+
 isAnagram("BiancaacnaiB")
