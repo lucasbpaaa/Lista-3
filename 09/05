@@ -15,7 +15,7 @@ isPalindrome("asa")
 
 #Question 2 ( SOLUÇÃO 2 ):
 
-def isAnagram(word):
+def isPalindrome(word):
     word = word.lower()
     lista = []
     for letter in word:
